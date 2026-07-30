@@ -1,0 +1,42 @@
+/* Reset margins and hidden scrollbars */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Make canvas full screen */
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Cinematic overlay text */
+#ui {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    pointer-events: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+
+#ui h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#ui p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #ccc;
+}
